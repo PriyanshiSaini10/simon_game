@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            caret-color: transparent;
+            min-height: 90vh;
+        }
+        .top{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn{
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+        }
+        .pink {
+            background-color: rgb(255, 192, 240);
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+        .flash{
+            background-color: white;
+        }
+        .error{
+            background-color: red;
+        }
+        p{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simon says</h1>
+    <p>Press any key or click anywhere to start the game...</p>
+
+    <div class="container">
+        <div class="top">
+            <div class="pink btn" id="pink"></div>
+            <div class="green btn" id="green"></div>
+        </div>
+        <div class="bottom">
+            <div class="blue btn" id="blue"></div>
+            <div class="yellow btn" id="yellow"></div>
+        </div>
+    </div>
+    <h3>High Score : <span id="score">0</span></h3>
+    <script src="script.js"></script>
+</body>
+
+</html>
